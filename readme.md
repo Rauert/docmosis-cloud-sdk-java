@@ -3,18 +3,20 @@ Docmosis Cloud SDK Java (DWS2) - Readme
 
 Welcome to the Docmosis Web Services SDK (Java Edition). This SDK makes it easy 
 to invoke API calls on Docmosis web service end points (such as the public 
-Docmosis Cloud Services). This version is intended for users of Docmosis Web 
-Services 2 (DWS2).  
+Docmosis Cloud Services).
+
+This version is intended for users of Docmosis Web Services 2 (DWS2).  
 
 To run this SDK you require Java 1.6 or later and a Docmosis DWS2 Cloud account.
 
 If you don't already have a Docmosis account you can sign up for a free trial
-at: https://www.docmosis.com/try.
+at: [https://www.docmosis.com/try](https://www.docmosis.com/try).
 
-Please look at the sample code on our github project page for some examples 
-to get started: [github.com/Docmosis/docmosis-cloud-sdk-java](https://github.com/Docmosis/docmosis-cloud-sdk-java/tree/master/dws2).  More 
-information about rendering documents can be found in the Web Services Guide 
-and the Template Guide at the Docmosis support site [docmosis.com](http://www.docmosis.com)
+Please look at the [examples](https://github.com/Docmosis/docmosis-cloud-sdk-java/tree/master/dws2/examples) 
+on our [github project page](https://github.com/Docmosis/docmosis-cloud-sdk-java/tree/master/dws2) 
+for some sample code to get started.  More information about rendering documents 
+can be found in the Web Services Guide and the Template Guide at the Docmosis 
+support site: [docmosis.com](http://www.docmosis.com)
 
 ## Installation
 
@@ -34,10 +36,10 @@ Please be sure to replace `2.X.X` with the latest version number of the DWS2 SDK
 
 #### JAR file
 
-The current release of the jar can be found under the `dist` folder, or you can 
+The current release of the jar can be found under [dist](https://github.com/Docmosis/docmosis-cloud-sdk-java/tree/master/dws2/dist), or you can 
 build the jar yourself with the following steps:
 
-1. Download the Docmosis Cloud SDK Java (DWS2) project from github
+1. Download the [Docmosis Cloud SDK Java (DWS2) project](https://github.com/Docmosis/docmosis-cloud-sdk-java/tree/master/dws2)
 2. Unzip the package
 3. Build the jar using:
 
