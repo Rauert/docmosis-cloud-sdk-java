@@ -7,7 +7,6 @@ import org.junit.Test;
 import com.docmosis.sdk.convert.Converter;
 import com.docmosis.sdk.convert.ConverterException;
 import com.docmosis.sdk.convert.ConverterResponse;
-import com.docmosis.sdk.environment.Endpoint;
 import com.docmosis.sdk.environment.Environment;
 import com.docmosis.sdk.file.DeleteFilesResponse;
 import com.docmosis.sdk.file.GetFileResponse;
@@ -62,7 +61,7 @@ public class TestAll extends TestCase {
 	public TestAll( String testName )
     {
         super( testName );
-        Environment.setDefaults(Endpoint.DWS_VERSION_3_AUS, ACCESS_KEY);
+        Environment.setDefaults(ACCESS_KEY);
     }
 
 /*

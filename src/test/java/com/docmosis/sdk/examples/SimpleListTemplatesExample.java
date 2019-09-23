@@ -18,7 +18,6 @@ package com.docmosis.sdk.examples;
 import java.io.IOException;
 import java.util.List;
 
-import com.docmosis.sdk.environment.Endpoint;
 import com.docmosis.sdk.environment.Environment;
 import com.docmosis.sdk.handlers.DocmosisException;
 import com.docmosis.sdk.template.ListTemplatesResponse;
@@ -56,7 +55,7 @@ public class SimpleListTemplatesExample
 			System.exit(1);
 		}
 
-		Environment.setDefaults(Endpoint.DWS_VERSION_3_AUS, ACCESS_KEY);
+		Environment.setDefaults(ACCESS_KEY);
 		
 		ListTemplatesResponse templates = Template
 				.list()

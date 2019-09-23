@@ -17,7 +17,6 @@ package com.docmosis.sdk.examples;
 
 import java.io.IOException;
 
-import com.docmosis.sdk.environment.Endpoint;
 import com.docmosis.sdk.environment.Environment;
 import com.docmosis.sdk.handlers.DocmosisException;
 import com.docmosis.sdk.image.DeleteImageResponse;
@@ -57,7 +56,7 @@ public class SimpleDeleteImageExample
 			System.exit(1);
 		}
 		
-		Environment.setDefaults(Endpoint.DWS_VERSION_3_AUS, ACCESS_KEY);
+		Environment.setDefaults(ACCESS_KEY);
 
 		DeleteImageResponse deleteImage = Image
 											.delete()

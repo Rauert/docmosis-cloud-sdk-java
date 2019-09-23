@@ -19,7 +19,6 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Date;
 
-import com.docmosis.sdk.environment.Endpoint;
 import com.docmosis.sdk.environment.Environment;
 import com.docmosis.sdk.render.RenderResponse;
 import com.docmosis.sdk.render.Renderer;
@@ -67,7 +66,7 @@ public class SimpleCloudXMLExample
 			System.exit(1);
 		}
 		
-		Environment.setDefaults(Endpoint.DWS_VERSION_3_AUS, ACCESS_KEY);
+		Environment.setDefaults(ACCESS_KEY);
 
 		//Create data to send
 		final String data = "<title>" + "This is Docmosis Cloud\n" + new Date() + "</title>";

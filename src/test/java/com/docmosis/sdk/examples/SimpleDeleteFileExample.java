@@ -18,7 +18,6 @@ package com.docmosis.sdk.examples;
 
 import java.io.IOException;
 
-import com.docmosis.sdk.environment.Endpoint;
 import com.docmosis.sdk.environment.Environment;
 import com.docmosis.sdk.file.DeleteFilesResponse;
 import com.docmosis.sdk.file.FileStorage;
@@ -59,7 +58,7 @@ public class SimpleDeleteFileExample
 			System.exit(1);
 		}
 		
-		Environment.setDefaults(Endpoint.DWS_VERSION_3_AUS, ACCESS_KEY);
+		Environment.setDefaults(ACCESS_KEY);
 
 		DeleteFilesResponse deletedFile = FileStorage
 											.delete()

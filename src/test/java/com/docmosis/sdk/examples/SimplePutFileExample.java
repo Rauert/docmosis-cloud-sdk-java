@@ -19,7 +19,6 @@ package com.docmosis.sdk.examples;
 import java.io.File;
 import java.io.IOException;
 
-import com.docmosis.sdk.environment.Endpoint;
 import com.docmosis.sdk.environment.Environment;
 import com.docmosis.sdk.file.FileStorage;
 import com.docmosis.sdk.file.PutFileResponse;
@@ -60,7 +59,7 @@ public class SimplePutFileExample
 			System.exit(1);
 		}
 		
-		Environment.setDefaults(Endpoint.DWS_VERSION_3_AUS.getBaseUrl(), ACCESS_KEY);
+		Environment.setDefaults(ACCESS_KEY);
 		
 		File uploadFile = new File(FILE_TO_UPLOAD);
 		PutFileResponse uploadedFile = FileStorage

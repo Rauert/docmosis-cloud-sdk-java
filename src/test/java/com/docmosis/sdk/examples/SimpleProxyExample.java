@@ -67,7 +67,7 @@ public class SimpleProxyExample
 		
 		EnvironmentBuilder envBldr = new EnvironmentBuilder();
 		envBldr.setAccessKey(ACCESS_KEY);
-		envBldr.setBaseUrl(Endpoint.DWS_VERSION_3_AUS.getBaseUrl());
+		envBldr.setBaseUrl(Endpoint.DWS_VERSION_2_USA.getBaseUrl());
 		
 		//Connect to the Docmosis service via a proxy
 		envBldr.setProxy("HostAddress", 8888, "UserName", "Password");

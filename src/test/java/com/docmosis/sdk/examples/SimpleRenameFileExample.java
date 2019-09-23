@@ -18,7 +18,6 @@ package com.docmosis.sdk.examples;
 
 import java.io.IOException;
 
-import com.docmosis.sdk.environment.Endpoint;
 import com.docmosis.sdk.environment.Environment;
 import com.docmosis.sdk.file.FileStorage;
 import com.docmosis.sdk.file.RenameFilesResponse;
@@ -61,7 +60,7 @@ public class SimpleRenameFileExample
 			System.exit(1);
 		}
 		
-		Environment.setDefaults(Endpoint.DWS_VERSION_3_AUS.getBaseUrl(), ACCESS_KEY);
+		Environment.setDefaults(ACCESS_KEY);
 
 		RenameFilesResponse renamedFile = FileStorage
 											.rename()

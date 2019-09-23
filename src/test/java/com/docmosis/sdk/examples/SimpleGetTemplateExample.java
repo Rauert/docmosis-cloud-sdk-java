@@ -18,7 +18,6 @@ package com.docmosis.sdk.examples;
 import java.io.File;
 import java.io.IOException;
 
-import com.docmosis.sdk.environment.Endpoint;
 import com.docmosis.sdk.environment.Environment;
 import com.docmosis.sdk.handlers.DocmosisException;
 import com.docmosis.sdk.template.GetTemplateResponse;
@@ -59,7 +58,7 @@ public class SimpleGetTemplateExample
 			System.exit(1);
 		}
 
-		Environment.setDefaults(Endpoint.DWS_VERSION_3_AUS.getBaseUrl(), ACCESS_KEY);
+		Environment.setDefaults(ACCESS_KEY);
 
 		File outputFile = new File(FILE_TO_GET);
 		GetTemplateResponse template = Template
