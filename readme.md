@@ -34,6 +34,9 @@ Please be sure to replace `2.X.X` with the latest version number of the DWS2 SDK
 
 #### JAR file
 
+The current release of the jar can be found under the `dist` folder, or you can 
+build the jar yourself with the following steps:
+
 1. Download the Docmosis Cloud SDK Java (DWS2) project from github
 2. Unzip the package
 3. Build the jar using:
