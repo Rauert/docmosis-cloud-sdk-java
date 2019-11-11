@@ -17,26 +17,76 @@ package com.docmosis.sdk.template;
 import com.docmosis.sdk.response.DocmosisCloudResponse;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.JsonObject;
+import com.google.gson.JsonElement;
 
+/**
+ * This class encapsulates a response to a get template structure request.
+ * 
+ * Typically you would use this response to check for success, then access the returned template structure.   
+ * For example:
+ * 
+ * 
+ * <pre>
+ *   GetTemplateStructureResponse response = Template
+ *                                             .getStructure()
+ *                                             .templateName("MasterTemplates/MyMasterTemplate.docx")
+ *                                             .execute();
+ *   if (response.hasSucceeded()) {
+ *       JsonElement structure = response.getTemplateStructure();
+ *   }
+ * </pre>
+ * 
+ */
 public class GetTemplateStructureResponse extends DocmosisCloudResponse {
 
-	private JsonObject templateStructure = null;
+	private JsonElement templateStructure = null;
 	
-	public GetTemplateStructureResponse() {
-		super();
+	protected GetTemplateStructureResponse(DocmosisCloudResponse other) {
+		super(other);
 	}
 
 	/**
+	 * Get a json representation of the template's structure. The JSON keys use the terms “field”, “repeat”, 
+	 * “condition” and “image” to instruct what type of item it is, and then an index starting at 0.
+	 * Importantly, items are in order and nested structures matching the template. This means that fields 
+	 * within repeating sections will be depicted within a matching structure, eg:
+	 * {
+	 *    “field.0”:”firstName”,
+	 *    “field.1”:”lastName”,
+	 *    “repeat.0.addresses”:{
+	 *       “field.3”:”addressLine1”,
+	 *       “field.4”:”addressLine2”,
+	 *    }
+	 * }
 	 * 
-	 * @return Json representation of the templates structure
+	 * @return template structure as a JsonElement
 	 */
-	public JsonObject getStructure() {
+	public JsonElement getTemplateStructure() {
 		return templateStructure;
 	}
 
-	public void setTemplateStructure(JsonObject templateStructure) {
+	protected void setTemplateStructure(JsonElement templateStructure) {
 		this.templateStructure = templateStructure;
+	}
+
+	/**
+	 * Get a json representation of the template's structure. The JSON keys use the terms “field”, “repeat”, 
+	 * “condition” and “image” to instruct what type of item it is, and then an index starting at 0.
+	 * Importantly, items are in order and nested structures matching the template. This means that fields 
+	 * within repeating sections will be depicted within a matching structure, eg:
+	 * {
+	 *    “field.0”:”firstName”,
+	 *    “field.1”:”lastName”,
+	 *    “repeat.0.addresses”:{
+	 *       “field.3”:”addressLine1”,
+	 *       “field.4”:”addressLine2”,
+	 *    }
+	 * }
+	 * 
+	 * @return template structure as a formatted String
+	 */
+	public String getTemplateStructureString() {
+		return toString();
 	}
 	
 	@Override
