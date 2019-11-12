@@ -9,13 +9,13 @@ import com.docmosis.sdk.response.DocmosisCloudResponse;
  * Typically you would use this response to check for success, then decide what action to take.  For example:
  * 
  * 
- * <pre>
- *  GetFileResponse getFile = FileStorage
- *                              .get()
- *                              .fileName(fileToGet)
- *                              .sendTo(outputFileOrStream)
- *                              .execute();
- *  if (getFile.hasSucceeded()) {
+ *  <pre>
+ *  GetFileResponse response = FileStorage
+ *                               .get()
+ *                               .fileName(fileToGet)
+ *                               .sendTo(outputFileOrStream)
+ *                               .execute();
+ *  if (response.hasSucceeded()) {
  *      //File saved to outputFileOrStream
  *  }
  * </pre>

@@ -26,8 +26,8 @@ import com.docmosis.sdk.response.DocmosisCloudResponse;
  * 
  * 
  * <pre>
- *   ListTemplatesResponse templates = Template.list().execute();
- *   List&lt;TemplateDetails&gt; list = templates.list();
+ *   ListTemplatesResponse response = Template.list().execute();
+ *   List&lt;TemplateDetails&gt; list = response.list();
  *   for(TemplateDetails td : list) {
  *       td.toString();
  *   }
