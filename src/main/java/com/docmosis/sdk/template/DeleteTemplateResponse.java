@@ -24,9 +24,9 @@ import com.docmosis.sdk.response.DocmosisCloudResponse;
  * 
  * <pre>
  *   DeleteTemplateResponse response = Template
- *                            .delete()
- *                            .templateName(fileToDelete)
- *                            .execute();
+ *                                       .delete()
+ *                                       .templateName(fileToDelete)
+ *                                       .execute();
  *  if (response.hasSucceeded()) {
  *      //Succeeded
  *  }

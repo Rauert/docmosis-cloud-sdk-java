@@ -28,7 +28,7 @@ import com.docmosis.sdk.response.DocmosisCloudResponse;
  *                                   .path(fileName)
  *                                   .execute();
  *   if (response.hasSucceeded()) {
- *       //File Deleted
+ *       //File deleted
  *   }
  * </pre>
  */

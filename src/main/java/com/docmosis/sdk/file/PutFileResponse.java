@@ -28,7 +28,7 @@ import com.docmosis.sdk.response.DocmosisCloudResponse;
  *                                .file(uploadFile)
  *                                .execute();
  *   if (response.hasSucceeded()) {
- *       //File Uploaded
+ *       //Succeeded
  *   }
  * </pre>
  */

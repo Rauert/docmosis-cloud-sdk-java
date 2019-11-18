@@ -34,7 +34,7 @@ import com.google.gson.JsonElement;
  *                                      .format("json")
  *                                      .execute();
  *   if (response.hasSucceeded()) {
- *       System.out.println(response.getSampleDataString());
+ *       response.getSampleDataString();
  *   }
  * </pre>
  */

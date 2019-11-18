@@ -29,7 +29,7 @@ import com.docmosis.sdk.response.DocmosisCloudResponse;
  *   ListImagesResponse response = Image.list().execute();
  *   List&lt;ImageDetails&gt; list = response.list();
  *   for(ImageDetails id : list) {
- *       id.toString();
+ *       System.out.println(id.toString());
  *   }
  * </pre>
  */

@@ -9,7 +9,7 @@ import com.docmosis.sdk.response.DocmosisCloudResponse;
  * Typically you would use this response to check for success, then decide what action to take.  For example:
  * 
  * 
- *  <pre>
+ * <pre>
  *  GetFileResponse response = FileStorage
  *                               .get()
  *                               .fileName(fileToGet)

@@ -35,7 +35,7 @@ import com.docmosis.sdk.request.DocmosisCloudRequest;
  *                                    .imageFile(uploadFile)
  *                                    .execute();
  *	 if (response.hasSucceeded()) {
- *       //Image Uploaded
+ *       //Succeeded
  *   }
  * </pre>
  */

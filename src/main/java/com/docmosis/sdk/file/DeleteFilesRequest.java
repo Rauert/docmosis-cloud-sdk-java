@@ -33,7 +33,7 @@ import com.docmosis.sdk.request.DocmosisCloudRequest;
  *                                   .path(fileName)
  *                                   .execute();
  *   if (response.hasSucceeded()) {
- *       //File Deleted
+ *       //File deleted
  *   }
  * </pre>
  */

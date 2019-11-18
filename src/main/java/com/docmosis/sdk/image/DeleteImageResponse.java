@@ -24,9 +24,9 @@ import com.docmosis.sdk.response.DocmosisCloudResponse;
  * 
  * <pre>
  *   DeleteImageResponse response = Image
- *                                    .delete()
- *                                    .addImageName(fileToDelete)
- *                                    .execute();
+ *                                   .delete()
+ *                                   .addImageName(fileToDelete)
+ *                                   .execute();
  *  if (response.hasSucceeded()) {
  *      //Succeeded
  *  }

@@ -31,7 +31,7 @@ import com.docmosis.sdk.request.DocmosisCloudRequest;
  *   ListImagesResponse response = Image.list().execute();
  *   List&lt;ImageDetails&gt; list = response.list();
  *   for(ImageDetails id : list) {
- *       id.toString();
+ *       System.out.println(id.toString());
  *   }
  * </pre>
  */
